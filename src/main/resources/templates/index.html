@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Test001</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="mybox">
+  <h4>Thymeleaf Test 鈦葉子測試</h4>
+    <h5 th:text="${host}"></h5>
+</div>
+
+<style>
+    h4{
+      color:yellow;
+    }
+
+    #mybox{
+        border:solid 2px dodgerblue;
+        border-radius: 10px;
+        background-color: dodgerblue;
+        width:300px;
+        text-align: center;
+        margin: 50px;
+    }
+    body{
+        background: black;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $('#mybox').click(function () {
+            alert("You Press ME!!!!");
+            window.location="page2";
+        });
+    });
+</script>
+</body>
+</html>
