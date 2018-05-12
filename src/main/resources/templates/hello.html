@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+    <h4>This is Hello Page</h4>
+
+    <h5 th:text="${message}"></h5>
+    <h5 th:text="${name}"></h5>
+
+
+    <form action="/helloform" method="post">
+        <input type="text" name="name" />
+        <button type="submit">Press Me</button>
+    </form>
+
+</body>
+</html>

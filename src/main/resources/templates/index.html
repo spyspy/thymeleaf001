@@ -14,6 +14,7 @@
 <div id="mybox">
   <h4>Thymeleaf Test 鈦葉子測試</h4>
     <h5 th:text="${host}"></h5>
+    <h6 th:text="${message}"></h6>
 </div>
 
 <style>
@@ -27,7 +28,7 @@
         background-color: dodgerblue;
         width:300px;
         text-align: center;
-        margin: 50px;
+        margin: 0 auto;
     }
     body{
         background: black;
@@ -38,6 +39,7 @@
         $('#mybox').click(function () {
             alert("You Press ME!!!!");
             window.location="page2";
+            console.log(window.location)
         });
     });
 </script>
